@@ -5,6 +5,7 @@ import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
+import { PAGE_TITLE } from '../lib/constants'
 import Post from '../types/post'
 
 type Props = {
@@ -18,7 +19,7 @@ const Index = ({ allPosts }: Props) => {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example</title>
+          <title>{PAGE_TITLE}</title>
         </Head>
         <Container>
           <Intro />

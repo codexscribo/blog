@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { META_DESCRIPTION } from '../lib/constants'
 
 const Meta = () => {
   return (
@@ -33,7 +34,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js.`}
+        content={META_DESCRIPTION}
       />
     </Head>
   )
